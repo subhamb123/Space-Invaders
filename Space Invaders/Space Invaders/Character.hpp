@@ -2,10 +2,13 @@
 
 #include "header.hpp"
 
-class Character
+class Character : public Sprite
 {
 public:
-	Character();
+	Character(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Sprite(texture) {
+		setPosition(pos);
+		setScale(scale);
+	}
 	~Character();
 
 protected:

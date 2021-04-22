@@ -145,21 +145,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Scoring.cpp" />
-    <ClCompile Include="Virtualization.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ball.hpp" />
     <ClInclude Include="Character.hpp" />
-    <ClInclude Include="Enemies.hpp" />
+    <ClInclude Include="Enemy.hpp" />
     <ClInclude Include="header.hpp" />
     <ClInclude Include="Menu.hpp" />
     <ClInclude Include="Paddle.hpp" />
     <ClInclude Include="Scoring.hpp" />
     <ClInclude Include="User.hpp" />
-    <ClInclude Include="Virtualization.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,9 +1,1 @@
-﻿  Character.cpp
-  main.cpp
-  Menu.cpp
-  Scoring.cpp
-  Generating code
-  Previous IPDB and IOBJ mismatch, fall back to full compilation.
-  All 88 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  Space Invaders.vcxproj -> C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Release\Space Invaders.exe
+﻿  Space Invaders.vcxproj -> C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Release\Space Invaders.exe

@@ -154,6 +154,7 @@
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Missile.cpp" />
     <ClCompile Include="Scoring.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +162,7 @@
     <ClInclude Include="Enemy.hpp" />
     <ClInclude Include="header.hpp" />
     <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="Missile.hpp" />
     <ClInclude Include="Scoring.hpp" />
     <ClInclude Include="User.hpp" />
   </ItemGroup>

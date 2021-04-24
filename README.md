@@ -3,4 +3,4 @@
 For the CPTS 122 PA9 project, we decided to program a game of space invaders using SFML.
 
 Getting Started:
-https://www.youtube.com/watch?v=YfMQyOw1zik
+Make sure to format project in release and x86 mode.

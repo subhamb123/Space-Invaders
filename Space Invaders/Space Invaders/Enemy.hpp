@@ -13,9 +13,10 @@ public:
 	{
 		return alive;
 	}
-	void kill()
+	int kill(int level)
 	{
 		alive = false;
+		return level * 5;
 	}
 
 private:

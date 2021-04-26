@@ -155,8 +155,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Missile.cpp" />
-    <ClCompile Include="Scoring.cpp" />
-    <ClCompile Include="Template.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.hpp" />
@@ -164,7 +162,6 @@
     <ClInclude Include="header.hpp" />
     <ClInclude Include="Menu.hpp" />
     <ClInclude Include="Missile.hpp" />
-    <ClInclude Include="Scoring.hpp" />
     <ClInclude Include="User.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

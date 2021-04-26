@@ -11,7 +11,4 @@ public:
     }
     ~Missile();
     bool fire(const Vector2f& pos);
-
-private:
-
 };

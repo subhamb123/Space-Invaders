@@ -4,9 +4,9 @@
 
 class Menu {
 public:
-	Menu();
-	~Menu();
+    Menu(int userChoice = 0);
+    ~Menu();
+    void displayMenu(RenderWindow* window, int& score, int& lives, bool& b);
 
-private:
-
+    int userChoice;
 };

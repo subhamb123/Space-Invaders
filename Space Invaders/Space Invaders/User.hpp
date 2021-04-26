@@ -9,7 +9,4 @@ public:
 	User(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale) {
 		
 	}
-
-private:
-
 };

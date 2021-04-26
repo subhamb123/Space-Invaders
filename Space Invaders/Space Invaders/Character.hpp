@@ -10,9 +10,4 @@ public:
 		setScale(scale);
 	}
 	~Character();
-
-protected:
-	
-
-private:
 };

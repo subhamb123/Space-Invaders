@@ -1,3 +1,11 @@
+/************************************************************************
+* Programmers: Subham, Ryan, Danielle, Manjesh                          *
+* Class: CptS 122                                                       *
+* Programming Assignment: PA 9 - Space Invaders                         *
+* Date: 4/17/2021                                                       *
+* Description: This program emulates space invaders.                    *
+************************************************************************/
+
 #pragma once
 
 #include "header.hpp"
@@ -9,5 +17,4 @@ public:
 		setPosition(pos);
 		setScale(scale);
 	}
-	~Character();
 };

@@ -151,10 +151,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Missile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.hpp" />

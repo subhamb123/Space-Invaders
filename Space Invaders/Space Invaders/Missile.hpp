@@ -1,14 +1,20 @@
-#include "header.hpp"
-#include "User.hpp"
+/************************************************************************
+* Programmers: Subham, Ryan, Danielle, Manjesh                          *
+* Class: CptS 122                                                       *
+* Programming Assignment: PA 9 - Space Invaders                         *
+* Date: 4/17/2021                                                       *
+* Description: This program emulates space invaders.                    *
+************************************************************************/
 
-class Missile : public User
+#pragma once
+
+#include "Character.hpp"
+
+class Missile : public Character
 {
 public:
-    Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : User(pos, texture, scale)
+    Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale)
     {
-        setPosition(pos);
-        setScale(scale);
+        
     }
-    ~Missile();
-    bool fire(const Vector2f& pos);
 };

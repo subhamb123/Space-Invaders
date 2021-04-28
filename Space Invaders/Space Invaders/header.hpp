@@ -1,10 +1,17 @@
+/************************************************************************
+* Programmers: Subham, Ryan, Danielle, Manjesh                          *
+* Class: CptS 122                                                       *
+* Programming Assignment: PA 9 - Space Invaders                         *
+* Date: 4/17/2021                                                       *
+* Description: This program emulates space invaders.                    *
+************************************************************************/
+
 #pragma once
 
 #include <iostream>
 #include <string>
 #include <vector>
 #include <time.h>
-//#include<windows.h>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
@@ -13,5 +20,4 @@ using namespace sf;
 using std::cout;
 using std::endl;
 using std::to_string;
-using std::string;
 using std::vector;

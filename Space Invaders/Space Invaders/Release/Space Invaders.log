@@ -1,8 +1,4 @@
-﻿  Definitions.cpp
-  Enemy.cpp
-  Maiin.cpp
-  Menu.cpp
-  main.cpp
+﻿  main.cpp
 C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(236,31): warning C4018: '<': signed/unsigned mismatch
 C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(241,31): warning C4018: '<': signed/unsigned mismatch
 C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(280,31): warning C4018: '<': signed/unsigned mismatch

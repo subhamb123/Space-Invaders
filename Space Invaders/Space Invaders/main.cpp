@@ -20,7 +20,7 @@ int main() {
     bool next_level = true, indicator = true, dir = true, reset_check = false, no_test = true;
     int level = 1, lives = 5, score = 0, tChange1 = 1, tChange2 = 1, tChange3 = 1;
 
-    Clock c, c2, c3;
+    Clock c, c2;
 
     RenderWindow window(VideoMode(950, 950), "Space Invaders"); //Size of window
 

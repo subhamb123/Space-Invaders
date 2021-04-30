@@ -1,7 +1,11 @@
 # Space Invaders [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/subhamb123/Chess/blob/main/LICENSE)
 
 Getting Started:
-Make sure project is in release and x86 mode.
+1) Download the zip and unzip it.
+2) Go into the space invaders folder which is in the same folder as the license and readme.
+3) Open the sln file.
+4) Make sure project is in release and x86 mode.
+5) Start without debugging and enjoy the game!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -30,7 +34,7 @@ The ideal machine to run this program would be on a Windows machine. The code wa
 
 Technical Documentation:
 
-Our program is written in the C++ language and uses examples of pointers and classes to help optimize flow and simplicity of the code. One notable characteristic of our program is inheritance. A few of our classes can inherit another class to use the functions and data members from that class. In our program, we have three different classes that inherit the character class. This means that those classes can use the characteristics function that was provided in the character class.
+Our program is written in the C++ language and uses examples of pointers and classes to help optimize flow and simplicity of the code. One notable characteristic of our program is inheritance. A few of our classes can inherit another class to use the functions and data members from that class. In our program, we have three different classes that inherit the character class. 
 
 Example of Inheritance:
 

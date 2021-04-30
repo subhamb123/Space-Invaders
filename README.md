@@ -41,9 +41,13 @@ This shows that we are using polymorphism because we are initializing the ship a
 
 Testing Document:
 Test 1: Missile Deletion
+
 Test 2: Ship loses life
+
 Test 3: Shield loses health
+
 Test 4: Enemy Movement
+
 Test 5: Enemies randomly fire missiles
 
 List of Encountered Bugs:

@@ -42,7 +42,7 @@ Example of Inheritance:
 Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale) {}
 */
 
-This shows that we are inheriting the pos, texture and scale from Character class which allows us to use it within the Missile Class.
+This implies inheritence as we pass in pos, texture, and scale to the base class.
 
 Example of Polymorphism:
 

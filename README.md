@@ -14,7 +14,7 @@ Space Invaders
 
 User Manual:
 
-This program was built for the purpose of CPTS 122 Programming Assignment 9. Our task was to design a game within Visual Studio using graphics based on our choosing. We went with the approach of using SFML for our graphics engine and we decided to make Space Invaders as our game. The original game released in 1978 and our game is a derivative. Our game takes advantages of the libraries that are provided by implementing SFML to our code.
+This program was built for the purpose of WSU CPTS 122 Programming Assignment 9. Our task was to design a game within Visual Studio using graphics based on our choosing. We went with the approach of using SFML for our graphics engine and we decided to make Space Invaders as our game. The original game released in 1978 and our game is a derivative. Our game takes advantages of the libraries that are provided by implementing SFML to our code.
 
 Operation Manual:
 

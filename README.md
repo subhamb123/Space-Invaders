@@ -65,6 +65,6 @@ Test 4: Enemy Movement
 Test 5: Enemies randomly fire missiles
 
 List of Encountered Bugs:
-1.	At a point of time, we had a bug in which if there was an odd number of enemies at the end of the row and collided with the edge of the screen then the program would crash but that bug has been since fixed.
+1.	At a point of time, we had a bug in which if there was an even number of enemies at the end of the row and collided with the edge of the screen then the program would crash but that bug has been since fixed.
 2.	We used to have an issue in which implementing the menu was a big challenge because we would face the issue where it would flash the screen to update the screen, but it wouldn’t consistently remain on the menu screen till we told it to proceed.
 3.	Whenever our game started, the game would crash because we would use the numpad numbers instead of the top row of numbers.

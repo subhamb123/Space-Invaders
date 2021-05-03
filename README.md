@@ -20,7 +20,7 @@ Project Requirements: Inheritence and Polymorphism
 Example of Inheritance:
 
 ```Cpp
-Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale){}
+Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale) {}
 ```
 
 This implies inheritence as we pass in pos, texture, and scale to the base class.

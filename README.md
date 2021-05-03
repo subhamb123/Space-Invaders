@@ -31,7 +31,7 @@ Example of Polymorphism:
 Character* ship = new User(Vector2f(425.f, 825.f), t1, Vector2f(0.1f, 0.1f));
 ```
 
-This shows that we are using polymorphism because we are initializing the ship as a character class, but we are instantiating it to the user class. One key thing in polymorphism is virtual functions, which means derived classes override these functions. We don't have this in our project because there wasn't a function in the base class that could apply to all of the derived classes. With this description, there wasn't a need for polymorphism. It was one of the requirements. Having something like this below would have been fine. However, this gave dynamic casting practice.
+This shows that we are using polymorphism because we are initializing the ship as a character class, but we are instantiating it to the user class. One key thing in polymorphism is virtual functions, which means derived classes override base-class functions. We don't have this in our project because there wasn't a function in the base class that could apply to all of the derived classes. With this description, there wasn't a need for polymorphism. It was one of the requirements. Having something like this below would have been fine. However, this gave dynamic casting practice.
 
 ```Cpp
 User* ship = new User(Vector2f(425.f, 825.f), t1, Vector2f(0.1f, 0.1f));

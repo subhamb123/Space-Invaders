@@ -19,7 +19,7 @@ Project Requirements: Inheritence and Polymorphism
 
 Example of Inheritance:
 
-```
+```C
 Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale) {}
 ```
 

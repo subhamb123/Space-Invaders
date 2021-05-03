@@ -27,7 +27,7 @@ This implies inheritence as we pass in pos, texture, and scale to the base class
 
 Example of Polymorphism:
 
-```
+```C
 Character* ship = new User(Vector2f(425.f, 825.f), t1, Vector2f(0.1f, 0.1f)); // Polymorphism because user is a character
 ```
 

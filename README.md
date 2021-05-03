@@ -11,10 +11,27 @@ Getting Started:
 
 Group Members: Subham Behera, Ryan McCarragher, Danielle Craig, Manjesh Reddy Puram
 
-
 Team Name: Code Poltergeists
 
 Space Invaders
+
+Project Requirements: Inheritence and Polymorphism
+
+Example of Inheritance:
+
+```
+Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale) {}
+```
+
+This implies inheritence as we pass in pos, texture, and scale to the base class.
+
+Example of Polymorphism:
+
+```
+Character* ship = new User(Vector2f(425.f, 825.f), t1, Vector2f(0.1f, 0.1f)); // Polymorphism because user is a character
+```
+
+This shows that we are using polymorphism because we are initializing the ship as a character class, but we are instantiating it to the user class.
 
 User Manual:
 
@@ -35,22 +52,6 @@ The ideal machine to run this program would be on a Windows machine. The code wa
 Technical Documentation:
 
 Our program is written in the C++ language and uses examples of pointers and classes to help optimize flow and simplicity of the code. One notable characteristic of our program is inheritance. A few of our classes can inherit another class to use the functions and data members from that class. In our program, we have three different classes that inherit the character class. 
-
-Example of Inheritance:
-
-/* 
-Missile(const Vector2f& pos, const Texture& texture, const Vector2f& scale) : Character(pos, texture, scale) {}
-*/
-
-This implies inheritence as we pass in pos, texture, and scale to the base class.
-
-Example of Polymorphism:
-
-/*
-Character* ship = new User(Vector2f(425.f, 825.f), t1, Vector2f(0.1f, 0.1f)); // Polymorphism because user is a character
-*/
-
-This shows that we are using polymorphism because we are initializing the ship as a character class, but we are instantiating it to the user class.
 
 Testing Document:
 

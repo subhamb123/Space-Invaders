@@ -7,10 +7,16 @@
 ************************************************************************/
 
 #include "header.hpp"
-#include "Menu.hpp"
+#include "Character.hpp"
 #include "User.hpp"
 #include "Enemy.hpp"
 #include "Missile.hpp"
+#include "Menu.hpp"
+
+void delay(int x);
+void ship_movement(Character& ship, RenderWindow& window);
+void missile_movement(vector<Missile*>& missiles, vector<Missile*>& enemyM);
+void draw_missiles(vector<Missile*>& missiles, vector<Missile*>& enemyM, RenderWindow& window);
 
 int main() {
     srand((unsigned)time(nullptr));
@@ -20,7 +26,7 @@ int main() {
     bool next_level = true, indicator = true, dir = true, reset_check = false, no_test = true;
     int level = 1, lives = 5, score = 0, tChange1 = 1, tChange2 = 1, tChange3 = 1;
 
-    Clock c, c2;
+    Clock c, c2, c3;
 
     RenderWindow window(VideoMode(950, 950), "Space Invaders"); //Size of window
 
@@ -204,12 +210,7 @@ int main() {
         levelT.setString("Level: " + to_string(level));
 
         //Moves ship if it is within bounds of screen
-
-        if (ship->getPosition().x + 105 != window.getSize().x && (Keyboard::isKeyPressed(Keyboard::Right) || Keyboard::isKeyPressed(Keyboard::D)))
-            ship->move(0.5, 0);
-
-        if (ship->getPosition().x != 0 && (Keyboard::isKeyPressed(Keyboard::Left) || Keyboard::isKeyPressed(Keyboard::A)))
-            ship->move(-0.5, 0);
+        ship_movement(*ship, window);
 
         //Generates new missiles every 0.375 seconds or when user presses space, whichever is longest in time passed
         if (Keyboard::isKeyPressed(Keyboard::Space) && c.getElapsedTime().asSeconds() > 0.375) {
@@ -230,17 +231,7 @@ int main() {
         }
 
         //If there are missiles, they move
-
-
-        if (!missiles.empty()) {
-            for (int i = 0; i < missiles.size(); i++)
-                missiles.at(i)->move(Vector2f(0.f, -0.5f));
-        }
-
-        if (!enemyM.empty()) {
-            for (int i = 0; i < enemyM.size(); i++)
-                enemyM.at(i)->move(Vector2f(0.f, 0.5f));
-        }
+        missile_movement(missiles, enemyM);
 
         //When a live enemy hits a border, they change directions and go down
         for (int i = 0; i < 10; i++)
@@ -275,16 +266,7 @@ int main() {
         window.draw(shieldS3);
 
         //Draws missiles if there are any on the screen
-
-        if (!missiles.empty()) {
-            for (int i = 0; i < missiles.size(); i++)
-                window.draw(*missiles.at(i));
-        }
-
-        if (!enemyM.empty()) {
-            for (int i = 0; i < enemyM.size(); i++)
-                window.draw(*enemyM.at(i));
-        }
+        draw_missiles(missiles, enemyM, window);
 
         window.draw(*ship);
 
@@ -398,9 +380,6 @@ int main() {
         }
 
     escape4:
-        //game_state(next_level, lives, reset_check, scoreEnd, levelEnd, endMessage, score, level, window, indicator, missiles, enemyM, shieldS1, shieldS2, shieldS3, shieldT1, shieldT2, shieldT3, tChange1, tChange2, tChange3);
-        //We tried making the block below into a function, but just by looking at the header itself it really isn't that much more organized.
-
         if (next_level || lives == 0) {
             reset_check = true; //Resets enemies using algorithm on line 181
             scoreEnd.setString("Score: " + to_string(score));
@@ -474,13 +453,8 @@ int main() {
                 if (removeTM >= 5)
                     break;
 
-                if (!missiles.empty()) {
-                    for (int i = 0; i < missiles.size(); i++)
-                        window.draw(*missiles.at(i));
-
-                    for (int i = 0; i < missiles.size(); i++)
-                        missiles.at(i)->move(Vector2f(0.f, -0.5f));
-                }
+                draw_missiles(missiles, enemyM, window);
+                missile_movement(missiles, enemyM);
 
                 window.display();
                 window.clear();
@@ -516,15 +490,8 @@ int main() {
                     break;
                 }
 
-                if (!enemyM.empty()) {
-                    for (int i = 0; i < enemyM.size(); i++)
-                        window.draw(*enemyM.at(i));
-                }
-
-                if (!enemyM.empty()) {
-                    for (int i = 0; i < enemyM.size(); i++)
-                        enemyM.at(i)->move(Vector2f(0.f, 0.5f));
-                }
+                draw_missiles(missiles, enemyM, window);
+                missile_movement(missiles, enemyM);
 
                 window.display();
                 window.clear();
@@ -554,7 +521,7 @@ int main() {
                     tChange2++;
                     removeTM++;
                 }
-                
+
                 if (removeTM >= 3) {
                     window.clear();
                     window.draw(shieldS2);
@@ -564,15 +531,8 @@ int main() {
                     break;
                 }
 
-                if (!enemyM.empty()) {
-                    for (int i = 0; i < enemyM.size(); i++)
-                        window.draw(*enemyM.at(i));
-                }
-
-                if (!enemyM.empty()) {
-                    for (int i = 0; i < enemyM.size(); i++)
-                        enemyM.at(i)->move(Vector2f(0.f, 0.5f));
-                }
+                draw_missiles(missiles, enemyM, window);
+                missile_movement(missiles, enemyM);
 
                 window.display();
                 window.clear();
@@ -720,13 +680,8 @@ int main() {
                 if (removeTM >= 5)
                     break;
 
-                if (!enemyM.empty()) {
-                    for (int i = 0; i < enemyM.size(); i++)
-                        window.draw(*enemyM.at(i));
-
-                    for (int i = 0; i < enemyM.size(); i++)
-                        enemyM.at(i)->move(Vector2f(0.f, 0.5f));
-                }
+                draw_missiles(missiles, enemyM, window);
+                missile_movement(missiles, enemyM);
 
                 window.display();
                 window.clear();
@@ -738,4 +693,84 @@ int main() {
     }
 
     return 0;
+}
+
+/****************************************************************
+* Function: delay()                                             *
+* Date Created: 4/17/2021                                       *
+* Date Last Modified: 4/17/2021                                 *
+* Description: pauses the program for some miliseconds.         *
+* Input parameters: miliseconds as int                          *
+* Returns: Nothing                                              *
+* Preconditions: miliseconds as int                             *
+* Postconditions: the program has been delayed for some time    *
+*****************************************************************/
+void delay(int x) {
+    clock_t time = clock();
+    while (clock() < time + x)
+        ;
+}
+
+/****************************************************************
+* Function: ship_movement()                                     *
+* Date Created: 4/17/2021                                       *
+* Date Last Modified: 4/17/2021                                 *
+* Description: Moves the ship                                   *
+* Input parameters: Character&, RenderWindow&                   *
+* Returns: Nothing                                              *
+* Preconditions: Character&, RenderWindow&                      *
+* Postconditions: The ship has been moved.                      *
+*****************************************************************/
+void ship_movement(Character& ship, RenderWindow& window) {
+    if (ship.getPosition().x + 105 != window.getSize().x && (Keyboard::isKeyPressed(Keyboard::Right) || Keyboard::isKeyPressed(Keyboard::D)))
+        ship.move(0.5, 0);
+
+    if (ship.getPosition().x != 0 && (Keyboard::isKeyPressed(Keyboard::Left) || Keyboard::isKeyPressed(Keyboard::A)))
+        ship.move(-0.5, 0);
+}
+
+/****************************************************************
+* Function: missile_movement()                                  *
+* Date Created: 4/17/2021                                       *
+* Date Last Modified: 4/17/2021                                 *
+* Description: Moves the user and enemy missiles                *
+* Input parameters: vector<Missile*>&, vector<Missile*>&        *
+* Returns: Nothing                                              *
+* Preconditions: vector<Missile*>&, vector<Missile*>&           *
+* Postconditions: The missiles have been moved                  *
+*****************************************************************/
+void missile_movement(vector<Missile*>& missiles, vector<Missile*>& enemyM)
+{
+    if (!missiles.empty()) {
+        for (int i = 0; i < missiles.size(); i++)
+            missiles.at(i)->move(Vector2f(0.f, -0.5f));
+    }
+
+    if (!enemyM.empty()) {
+        for (int i = 0; i < enemyM.size(); i++)
+            enemyM.at(i)->move(Vector2f(0.f, 0.5f));
+    }
+}
+
+/****************************************************************
+* Function: draw_missiles()                                     *
+* Date Created: 4/17/2021                                       *
+* Date Last Modified: 4/17/2021                                 *
+* Description: Draws the user and enemy missiles                *
+* Input parameters: 2x vector<Missile*>&, RenderWindow&         *
+* Returns: Nothing                                              *
+* Preconditions: 2x vector<Missile*>&, RenderWindow&            *
+* Postconditions: The missiles have been drawn                  *
+*****************************************************************/
+void draw_missiles(vector<Missile*>& missiles, vector<Missile*>& enemyM, RenderWindow& window)
+{
+    if (!missiles.empty()) {
+        for (int i = 0; i < missiles.size(); i++)
+            window.draw(*missiles.at(i));
+    }
+
+    if (!enemyM.empty()) {
+        for (int i = 0; i < enemyM.size(); i++)
+            window.draw(*enemyM.at(i));
+    }
 }

@@ -1,25 +1,5 @@
-﻿  main.cpp
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(236,31): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(241,31): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(280,31): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(285,31): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(299,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(319,35): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(462,59): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(478,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(481,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(520,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(525,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(568,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(573,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(724,39): warning C4018: '<': signed/unsigned mismatch
-C:\Subham\Development\Visual Studio\WSU\CPTS 122\Programming Assignments\.C++\Space Invaders\Space Invaders\main.cpp(727,39): warning C4018: '<': signed/unsigned mismatch
-  Generating code
-  1 of 236 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+﻿  Generating code
+  0 of 239 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

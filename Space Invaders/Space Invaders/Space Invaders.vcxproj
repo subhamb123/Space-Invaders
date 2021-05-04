@@ -151,9 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Definitions.cpp" />
     <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Maiin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
   </ItemGroup>

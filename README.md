@@ -17,6 +17,9 @@ Space Invaders
 
 Project Requirements: Inheritence and Polymorphism
 
+NOTE: We tried implementing a .cpp file for function definitions within main.cpp but couldn't quite get the files to link properly. All prototypes are on the top of main.cpp and 
+      function definitions are below.
+
 Example of Inheritance:
 
 ```Cpp

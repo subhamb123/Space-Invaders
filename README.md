@@ -1,4 +1,4 @@
-# Space Invaders [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/subhamb123/Chess/blob/main/LICENSE)
+# Space Invaders [![license](https://github.com/subhamb123/Space-Invaders/blob/main/LICENSE)
 
 Getting Started:
 1) Download the zip and unzip it.

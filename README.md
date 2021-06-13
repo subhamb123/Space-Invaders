@@ -2,10 +2,7 @@
 
 Getting Started:
 1) Download the zip and unzip it.
-2) Go into the space invaders folder which is in the same folder as the license and readme.
-3) Open the sln file.
-4) Make sure project is in release and x86 mode.
-5) Start without debugging and enjoy the game!
+2) Click on the shortcut and enjoy the game!
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

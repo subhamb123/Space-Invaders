@@ -6,7 +6,7 @@ Getting Started:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 DISCLAIMER:
-This was coded primarily with a Lenovo ThinkPad T590 which has an integrated GPU in the Core i7. When I recently built my own computer with an Nvidia RTX 3050 (I am fairly new at this building PC business so I didn't realize it wasn't the best GPU for the money back when GPUs were scarce and were filthy expensive, but at least it runs Overwatch with 130 fps but not sure yet how many frames I'll get when I'll eventually stream on Twitch. Sorry for the ramble :P), I realized how fast everything is just due to the fps difference. Just please keep this in mind if this happens with you.
+This was coded primarily with a Lenovo ThinkPad T590 which has an integrated GPU in the Core i7. When I recently built my own computer with an Nvidia RTX 3050, I realized how fast everything is just due to the fps difference. Just please keep this in mind if this happens with you.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Group Members: Subham Behera, Ryan McCarragher, Danielle Craig, Manjesh Reddy Puram
